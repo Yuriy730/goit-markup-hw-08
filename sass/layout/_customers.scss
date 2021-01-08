@@ -1,0 +1,41 @@
+.regular-customer {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.customer-list {
+  display: flex;
+  justify-content: space-between;
+}
+.customer-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: $title-text-color;
+}
+.customer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid $primery-grey-color;
+  box-sizing: border-box;
+  border-radius: 4px;
+  fill: $primery-grey-color;
+  transition: 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
+}
+
+.customer-link:hover > .customer-icon,
+.customer-link:focus > .customer-icon {
+  fill: $accent-color;
+}

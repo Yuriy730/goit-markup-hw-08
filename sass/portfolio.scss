@@ -1,0 +1,20 @@
+// UTILS
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+// BASE
+@import "./base/common";
+@import "./base/container";
+
+// COMPONENTS
+@import "./components/logo";
+@import "./components/social-web";
+@import "./components/modal-btn-send";
+@import "./components/modal-form-btn";
+
+// LAYOUT
+@import "./layout/header";
+@import "./layout/service";
+@import "./layout/cards-set";
+@import "./layout/footer";
+@import "./layout/email-sub";
