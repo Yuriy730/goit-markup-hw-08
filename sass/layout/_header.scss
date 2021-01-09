@@ -8,9 +8,12 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    padding: 21px 0;
+  }
+
   .navigation {
     display: flex;
-    padding: 21px 0;
   }
 
   .navigation-list {
@@ -21,29 +24,25 @@
     margin-right: 84px;
   }
 
-  .navigation-list-item {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.143px;
-    letter-spacing: 0.02em;
-    color: $title-text-color;
-    transition: 250ms $timing-function;
-    text-decoration: none;
-  }
-
   .navigation-list-link {
     position: relative;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    color: $title-text-color;
     padding-bottom: auto;
+    transition: 250ms $timing-function;
+    text-decoration: none;
 
     &:hover,
     &:focus {
       color: $accent-color;
     }
-  }
 
-  .navigation-list-link.current {
-    color: $accent-color;
+    &.current {
+      color: $accent-color;
+    }
   }
 
   .navigation-list-link::after {
@@ -58,24 +57,20 @@
     background-color: $accent-color;
     opacity: 0;
   }
+
   .current::after {
-    position: absolute;
-    content: "";
-    display: block;
-    transform: translateY(28px);
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: $accent-color;
     opacity: 1;
   }
+
   .navigation-list-link:hover::after {
     opacity: 1;
     transition: opacity 250ms $timing-function;
   }
+
   .address {
     display: flex;
   }
+
   .address-cont {
     display: block;
     align-items: center;
@@ -83,9 +78,102 @@
     font-size: 12px;
     line-height: 1.166;
     color: $primery-text-color;
+    fill: $primery-text-color;
+  }
+
+  .address-cont .address-mail {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    color: $primery-text-color;
+    transition: 250ms $timing-function;
+    text-decoration: none;
+    margin-bottom: 10px;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      fill: $accent-color;
+    }
+  }
+
+  .address-mail > .icon-envelope {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+  }
+
+  .address-tel > .icon-smartphone {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+  }
+  .address-cont .address-tel {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.02em;
+    color: $primery-text-color;
+    transition: 250ms $timing-function;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      fill: $accent-color;
+    }
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 25px 0;
+    border-bottom: 1px solid #ececec;
+  }
+  .navigation {
+    align-items: center;
+  }
+
+  .navigation-list {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .address {
+    display: flex;
+
+    & > .address-cont {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 333px;
+      margin-left: 305px;
+    }
+  }
+  .address-cont .address-mail {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    margin-bottom: 0;
+  }
+  .address-mail > .icon-envelope {
+    width: 16px;
+    height: 12px;
+  }
+
+  .address-tel > .icon-smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 8px;
+  }
+}
 /*.header {
   padding: 25px 0;
   border-bottom: 1px solid #ececec;
@@ -98,14 +186,14 @@
 
 .navigation-list {
   display: flex;
-}
+}*/
 
-.navigation-list-item {
+/*.navigation-list-item {
   &:not(:last-child) {
     margin-right: 50px;
   }
-}
-.navigation-list-link {
+}*/
+/*.navigation-list-link {
   position: relative;
   font-size: 14px;
   line-height: 1.143;
@@ -120,9 +208,9 @@
   &:focus {
     color: $accent-color;
   }
-}
+}*/
 
-.navigation-list-link.current {
+/*.navigation-list-link.current {
   color: $accent-color;
 }
 
@@ -152,9 +240,9 @@
 .navigation-list-link:hover::after {
   opacity: 1;
   transition: opacity 250ms $timing-function;
-}
+}*/
 
-.address {
+/*.address {
   display: flex;
 
   & > .address-cont {
