@@ -32,6 +32,47 @@
     text-decoration: none;
   }
 
+  .navigation-list-link {
+    position: relative;
+    padding-bottom: auto;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  .navigation-list-link.current {
+    color: $accent-color;
+  }
+
+  .navigation-list-link::after {
+    position: absolute;
+    content: "";
+    display: block;
+    transform: translateY(28px);
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    color: $accent-color;
+    background-color: $accent-color;
+    opacity: 0;
+  }
+  .current::after {
+    position: absolute;
+    content: "";
+    display: block;
+    transform: translateY(28px);
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+    opacity: 1;
+  }
+  .navigation-list-link:hover::after {
+    opacity: 1;
+    transition: opacity 250ms $timing-function;
+  }
   .address {
     display: flex;
   }
