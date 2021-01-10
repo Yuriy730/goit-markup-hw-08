@@ -1,4 +1,19 @@
 .modal-btn {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  color: $primery-white-color;
+  background-color: $accent-color;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 32px;
+}
+
+/*.modal-btn {
   border-radius: 4px;
   padding: 10px 32px;
   font-weight: 700;
@@ -10,4 +25,4 @@
   border: none;
   outline: none;
   cursor: pointer;
-}
+}*/
