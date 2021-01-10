@@ -196,7 +196,7 @@ img {
   fill: rgba(255, 255, 255, 0.9);
 }
 
-.modal-form-btn {
+/*.modal-form-btn {
   display: block;
   width: 200px;
   border-radius: 4px;
@@ -205,14 +205,13 @@ img {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
+  color: $primery-white-color;
+  background-color: $accent-color;
   border: none;
   outline: none;
   cursor: pointer;
   margin: 0 auto;
-}
-
+}*/
 .header {
   padding: 16px 0;
 }
