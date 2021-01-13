@@ -1,4 +1,95 @@
 .section-crew {
+  padding: 60px 0;
+  background-color: $secondary-background-color;
+
+  &-title {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.178;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+    margin-bottom: 30px;
+  }
+}
+
+.crew {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > .crewlist {
+    border: 1px solid #ececec;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: $primery-white-color;
+  }
+}
+
+.crewlist .passport {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.crewlist .name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.188;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+}
+@media screen and (max-width: 767px) {
+  .crew > .crewlist:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .crew {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .crewlist {
+    width: 354px;
+
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+
+    &:nth-child(even) {
+      margin-left: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-crew {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }  
+  .crew {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }  
+  .crewlist {
+    width: 270px;
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 4 - 30px);
+    padding-bottom: 0px;
+
+     
+  }
+
+}
+/*.section-crew {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: $secondary-background-color;
@@ -51,4 +142,4 @@
   color: $title-text-color;
   font-style: normal;
   letter-spacing: 0.03em;
-}
+}*/

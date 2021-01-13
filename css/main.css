@@ -796,10 +796,6 @@ img {
   letter-spacing: 0.03em;
 }
 
-.features-list-item:not(:last-child) {
-  padding-bottom: 30px;
-}
-
 .icons-features {
   display: flex;
   justify-content: center;
@@ -818,18 +814,24 @@ img {
   color: #212121;
 }
 
+@media screen and (max-width: 767px) {
+  .features-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .features-list-item {
     max-width: 354px;
   }
-  .features-list-item:not(:last-child) {
-    padding-bottom: 0;
-  }
-  .features-list-item:nth-child(-n+2) {
-    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1199px) {
+  .features-list-item:nth-child(-n + 2) {
+    margin-bottom: 30px;
   }
   .features-list-item:nth-child(even) {
-    padding-left: 30px;
+    margin-left: 30px;
   }
 }
 
@@ -843,12 +845,6 @@ img {
   }
   .features-list-item {
     max-width: 270px;
-  }
-  .features-list-item:nth-child(-n+2) {
-    padding-bottom: 0;
-  }
-  .features-list-item:nth-child(even) {
-    padding-left: 0;
   }
 }
 
@@ -980,11 +976,98 @@ img {
   color: $primery-white-color;
 }*/
 .section-crew {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
   background-color: #f5f4fa;
 }
 
+.section-crew-title {
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.178;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 30px;
+}
+
+.crew {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.crew > .crewlist {
+  border: 1px solid #ececec;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
+.crewlist .passport {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.crewlist .name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.188;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+@media screen and (max-width: 767px) {
+  .crew > .crewlist:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .crew {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .crewlist {
+    width: 354px;
+  }
+  .crewlist:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+  .crewlist:nth-child(even) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-crew {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .crew {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .crewlist {
+    width: 270px;
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 4 - 30px);
+    padding-bottom: 0px;
+  }
+}
+
+/*.section-crew {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $secondary-background-color;
+}
 .section-crew-title {
   display: flex;
   justify-content: center;
@@ -994,7 +1077,7 @@ img {
   font-size: 36px;
   line-height: 1, 166;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: $title-text-color;
 }
 
 .crew {
@@ -1002,40 +1085,38 @@ img {
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
-}
 
-.crew > .crewlist {
-  width: 270px;
-  margin-top: 30px;
-  margin-left: 30px;
-  flex-basis: calc(100% / 4 - 30px);
-  padding-bottom: 0px;
-  border: 1px solid #ececec;
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  background-color: #ffffff;
+  & > .crewlist {
+    width: 270px;
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 4 - 30px);
+    padding-bottom: 0px;
+    border: 1px solid #ececec;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: $primery-white-color;
+  }
 }
 
 .crewlist > .face {
   margin-bottom: 30px;
 }
-
 .crewlist .passport {
   text-align: center;
   padding-bottom: 30px;
 }
-
 .crewlist .name {
   margin-bottom: 10px;
   font-size: 16px;
   line-height: 1.187;
   font-weight: 500;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: $title-text-color;
   font-style: normal;
   letter-spacing: 0.03em;
-}
-
+}*/
 .regular-customer {
   padding-top: 94px;
   padding-bottom: 94px;

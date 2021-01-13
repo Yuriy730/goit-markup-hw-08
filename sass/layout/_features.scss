@@ -14,10 +14,6 @@
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-
-  &:not(:last-child) {
-    padding-bottom: 30px;
-  }
 }
 
 .icons-features {
@@ -28,7 +24,6 @@
   height: 120px;
   margin-bottom: 30px;
   background-color: $secondary-background-color;
-
 }
 .features-list-title {
   text-align: center;
@@ -38,46 +33,42 @@
   color: $title-text-color;
 }
 
+@media screen and (max-width: 767px) {
+  .features-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .features-list-item {
     max-width: 354px;
+  }
+}
 
-    &:not(:last-child) {
-      padding-bottom: 0;
-    }
-    &:nth-child(-n+2) {
-      padding-bottom: 30px;
-    }
-    
-    &:nth-child(even) {
-      padding-left: 30px;
-    }
+@media screen and (max-width: 1199px) {
+  .features-list-item:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+
+  .features-list-item:nth-child(even) {
+    margin-left: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .features {
     padding: 94px 0;
-    
+
     &-list {
       display: flex;
       justify-content: space-between;
-    }  
+    }
   }
-    
+
   .features-list-item {
     max-width: 270px;
-    
-    &:nth-child(-n+2) {
-      padding-bottom: 0;
-    }
-    
-    &:nth-child(even) {
-      padding-left: 0;
-    }
   }
 }
-
 
 /*.features {
   padding: 94px 0;
