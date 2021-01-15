@@ -73,6 +73,34 @@
     color: $accent-color;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .tube {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .tube {
+    flex-wrap: nowrap;
+    align-items: baseline;
+    
+    .logo-tube {
+      text-align: start;
+      margin-bottom: 20px;
+    }
+  }
+  .container-tube {
+    margin: 0 70px 0 0;
+    text-align: start;
+  }
+  .address-box {
+    margin-bottom: 0;
+  }
+}
 /*.footer {
   padding-top: 60px;
   padding-bottom: 60px;

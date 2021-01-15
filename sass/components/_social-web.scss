@@ -43,6 +43,30 @@
     fill: $primery-white-color;
   }
 }
+
+@media screen and (min-width:768px) {
+  .social-web {
+    padding-top: 65px;
+    margin: 0 auto;
+  }
+  
+  .slogan-web {
+    text-align: center; 
+  }
+} 
+
+@media screen and (min-width: 1200px) {
+  .slogan-web {
+    justify-content: flex-start;
+  }
+
+  .social-web-list {
+    margin-bottom: 0;
+    margin-right: 93px;
+    
+  }  
+}
+
 /*.slogan-web {
   display: flex;
   margin-bottom: 20px;

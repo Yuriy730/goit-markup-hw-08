@@ -44,7 +44,6 @@ img {
 .container {
   width: 100%;
   padding: 0 15px;
-  /*outline: 1px solid red;*/
 }
 
 @media screen and (min-width: 480px) {
@@ -174,6 +173,26 @@ img {
 .social-web-list-link:hover > .social-web-list-icon,
 .social-web-list-link:focus > .social-web-list-icon {
   fill: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .social-web {
+    padding-top: 65px;
+    margin: 0 auto;
+  }
+  .slogan-web {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slogan-web {
+    justify-content: flex-start;
+  }
+  .social-web-list {
+    margin-bottom: 0;
+    margin-right: 93px;
+  }
 }
 
 /*.slogan-web {
@@ -897,6 +916,32 @@ img {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .tube {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tube {
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+  .tube .logo-tube {
+    text-align: start;
+    margin-bottom: 20px;
+  }
+  .container-tube {
+    margin: 0 70px 0 0;
+    text-align: start;
+  }
+  .address-box {
+    margin-bottom: 0;
+  }
+}
+
 /*.footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -967,7 +1012,6 @@ img {
 
 .form-field-email {
   display: block;
-  position: relative;
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 20px;
@@ -978,12 +1022,8 @@ img {
 }
 
 .form-input {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-  padding-left: 16px;
-  padding-right: 16px;
+  max-width: 450px;
+  padding: 16px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -998,6 +1038,27 @@ img {
 .form-input::placeholder {
   font-weight: 400;
   font-size: 16px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form-subscription {
+    width: 450px;
+  }
+  .email-subscription {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-subscription {
+    display: flex;
+    flex-direction: row;
+    width: 570px;
+  }
+  .form-field-email {
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
 
 /*.email-subscription {
