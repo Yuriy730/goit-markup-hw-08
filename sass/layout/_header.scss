@@ -1,5 +1,45 @@
 .header {
+  position: relative;
   padding: 16px 0;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.button-burger {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.button-burger .icon-cross {
+  display: none;
+}
+.button-burger.is-open .icon-cross {
+  display: block;
+}
+.button-burger.is-open .icon-evenodd {
+  display: none;
+}
+.menu-container {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 453px;
+
+  padding: 0;
+  text-align: center;
+  outline: 1px solid tomato;
+  
+  &.is-open {
+   display: block;
+  
+  }
+
 }
 
 .navigation-list,

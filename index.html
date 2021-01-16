@@ -30,6 +30,27 @@
             <a class="logo" href="/index.html"
               ><span class="logo-accent">Web</span>Studio</a
             >
+            <button
+              class="button-burger is-open"
+              type="button"
+              aria-expanded="false"
+              data-menu-button
+            >
+              <svg class="" width="40px" height="40px">
+                aria-label="переключатель меню"
+                <use
+                  class="icon-evenodd"
+                  href="./images/icons/sprite.svg#icon-evenodd"
+                ></use>
+                <use
+                  class="icon-cross"
+                  href="./images/icons/sprite.svg#icon-cross"
+                ></use>
+              </svg>
+            </button>
+
+            <div class="menu-container data-menu">контент-меню</div>
+
             <ul class="navigation-list">
               <li class="navigation-list-item">
                 <a class="navigation-list-link current" href="./index.html"
@@ -603,9 +624,8 @@
 
       <section class="regular-customer">
         <div class="container">
-          <h2 class="customer-title" >Постоянные клиенты</h2>
+          <h2 class="customer-title">Постоянные клиенты</h2>
           <ul class="customer-list">
-            
             <li class="customer-item">
               <a class="customer-link" href="">
                 <svg class="customer-icon" width="44.27" height="49.23">
@@ -621,11 +641,11 @@
               </a>
             </li>
             <li class="customer-item">
-            <a class="customer-link" href="">
-              <svg class="customer-icon" width="41" height="42.6">
-                <use href="./images/icons/sprite.svg#icon-logo-3"></use>
-              </svg>
-            </a>
+              <a class="customer-link" href="">
+                <svg class="customer-icon" width="41" height="42.6">
+                  <use href="./images/icons/sprite.svg#icon-logo-3"></use>
+                </svg>
+              </a>
             </li>
             <li class="customer-item">
               <a class="customer-link" href="">
@@ -657,22 +677,28 @@
       <div class="container">
         <div class="tube">
           <div class="container-tube">
-            <a class="logo-tube" href="/index.html"><span class="logo-accent">Web</span>Studio</a>
+            <a class="logo-tube" href="/index.html"
+              ><span class="logo-accent">Web</span>Studio</a
+            >
             <address class="address-tube">
               <ul class="address-box">
                 <li class="address-mail-item">
                   <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
                 </li>
                 <li class="address-mail-item">
-                  <a class="address-mail-unit" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                  <a class="address-mail-unit" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
                 </li>
                 <li class="address-mail-item">
-                  <a class="address-tel-unit" href="tel:+380961111111">+38 096 111 11 11</a>
+                  <a class="address-tel-unit" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
                 </li>
               </ul>
             </address>
           </div>
-          
+
           <div class="social-web">
             <b class="slogan-web">ПРИСОЕДИНЯЙТЕСЬ</b>
             <ul class="social-web-list">
@@ -682,7 +708,6 @@
                     <use href="./images/icons/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
-            
               </li>
               <li class="social-web-list-item">
                 <a class="social-web-list-link" href="">
@@ -690,7 +715,6 @@
                     <use href="./images/icons/sprite.svg#icon-twitter"></use>
                   </svg>
                 </a>
-            
               </li>
               <li class="social-web-list-item">
                 <a class="social-web-list-link" href="">
@@ -698,7 +722,6 @@
                     <use href="./images/icons/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
-            
               </li>
               <li class="social-web-list-item">
                 <a class="social-web-list-link" href="">
@@ -706,33 +729,31 @@
                     <use href="./images/icons/sprite.svg#icon-linkedin2"></use>
                   </svg>
                 </a>
-            
               </li>
             </ul>
           </div>
-          
+
           <div class="email-subscription">
-        
             <b class="slogan-web">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
             <form class="form-subscription">
               <div class="form-field-email">
-                <input type="email" 
-                class="form-input" name="mail" placeholder="E-mail">
+                <input
+                  type="email"
+                  class="form-input"
+                  name="mail"
+                  placeholder="E-mail"
+                />
               </div>
-              <button class="modal-btn-send" type="submit"> Подписаться
+              <button class="modal-btn-send" type="submit">
+                Подписаться
                 <svg class="modal-icon-send">
                   <use href="./images/icons/sprite.svg#icon-send"></use>
                 </svg>
               </button>
             </form>
-            
-            
           </div>
-            
         </div>
-        
       </div>
-      
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
@@ -807,10 +828,13 @@
               id="checkbox"
               value="accept-policy"
             />
-            <label for="checkbox" class="policy-agreement">Соглашаюсь с рассылкой и принимаю<a
-              href="#"
-              class="subject-agreement">Условия договора</a
-            ></label>
+            <label for="checkbox" class="policy-agreement"
+              >Соглашаюсь с рассылкой и принимаю<a
+                href="#"
+                class="subject-agreement"
+                >Условия договора</a
+              ></label
+            >
           </div>
 
           <button type="submit" class="modal-form-btn">Отправить</button>
