@@ -28,11 +28,13 @@
         <div class="rubric">
           <nav class="navigation">
             <a class="logo" href="/index.html"
-              ><span class="logo-accent">Web</span>Studio</a
-            >
+              ><span class="logo-accent">Web</span>Studio
+            </a>
+
             <button
-              class="button-burger is-open"
+              class="menu-button is-open"
               type="button"
+              aria-controls="menu-container"
               aria-expanded="false"
               data-menu-button
             >
@@ -49,7 +51,9 @@
               </svg>
             </button>
 
-            <div class="menu-container data-menu">контент-меню</div>
+            <div class="menu-container" id="menu-container" data-menu>
+              контент-меню
+            </div>
 
             <ul class="navigation-list">
               <li class="navigation-list-item">

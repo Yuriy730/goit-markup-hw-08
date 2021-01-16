@@ -476,13 +476,13 @@ img {
   padding: 16px 0;
 }
 
-.navigation {
+.header .navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.button-burger {
+.menu-button {
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -490,16 +490,22 @@ img {
   background-color: transparent;
 }
 
-.button-burger .icon-cross {
+.menu-button .icon-cross {
   display: none;
 }
 
-.button-burger.is-open .icon-cross {
+.menu-button.is-open .icon-cross {
   display: block;
 }
 
-.button-burger.is-open .icon-evenodd {
+.menu-button.is-open .icon-evenodd {
   display: none;
+}
+
+@media screen and (min-width: 768) {
+  .menu-button {
+    display: none;
+  }
 }
 
 .menu-container {
@@ -512,10 +518,17 @@ img {
   padding: 0;
   text-align: center;
   outline: 1px solid tomato;
+  background-color: wheat;
 }
 
 .menu-container.is-open {
   display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+  }
 }
 
 .navigation-list,
