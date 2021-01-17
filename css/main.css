@@ -476,7 +476,7 @@ img {
   padding: 16px 0;
 }
 
-.header .navigation {
+.navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -502,22 +502,22 @@ img {
   display: none;
 }
 
-@media screen and (min-width: 768) {
-  .menu-button {
-    display: none;
-  }
+.menu-button:hover, .menu-button:focus {
+  color: #2196f3;
+  fill: #2196f3;
 }
 
 .menu-container {
   display: none;
   position: absolute;
+  border-top: 1px solid #ececec;
   left: 0;
   top: 100%;
   width: 100%;
   height: 453px;
   padding: 0;
   text-align: center;
-  background-color: wheat;
+  background-color: #ffffff;
 }
 
 .menu-container.is-open {
@@ -526,6 +526,12 @@ img {
 
 @media screen and (max-width: 767px) {
   .menu-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
     display: none;
   }
 }
