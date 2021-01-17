@@ -39,17 +39,10 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features-list-item {
     max-width: 354px;
   }
-}
-
-@media screen and (max-width: 1199px) {
-  .features-list-item:nth-child(-n + 2) {
-    margin-bottom: 30px;
-  }
-
   .features-list-item:nth-child(even) {
     margin-left: 30px;
   }
@@ -69,37 +62,3 @@
     max-width: 270px;
   }
 }
-
-/*.features {
-  padding: 94px 0;
-
-  &-list {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.icons-features {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: $secondary-background-color;
-}
-
-.features-list-title {
-  font-size: 14px;
-  margin-bottom: 10px;
-  color: $title-text-color;
-}
-.features-list .features-list-item {
-  font-weight: 400;
-  width: 270px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-}*/

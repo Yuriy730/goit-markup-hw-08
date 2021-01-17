@@ -3,11 +3,10 @@
 }
 
 @media screen and (min-width: 1200px) {
-  
   .section-duties {
     display: flex;
     padding-bottom: 94px;
-  
+
     &-title {
       display: flex;
       justify-content: center;
@@ -51,45 +50,3 @@
     color: $primery-white-color;
   }
 }
-/*.section-duties {
-  padding-bottom: 94px;
-
-  &-title {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.166;
-    letter-spacing: 0.03em;
-    color: $title-text-color;
-  }
-}
-
-.duties-element {
-  position: relative;
-}
-.field-label {
-  position: absolute;
-  width: 100%;
-  height: 70px;
-  bottom: 0;
-  background: rgba(47, 48, 58, 0.8);
-}
-.duties-label {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 16px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.172;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $primery-white-color;
-}*/

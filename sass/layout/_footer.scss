@@ -1,11 +1,9 @@
 .footer {
   padding-bottom: 60px;
   background-color: $primery-background-color;
-
 }
 
 .tube {
- 
   & .logo-tube {
     display: block;
     margin: 0 auto;
@@ -18,11 +16,10 @@
     color: $primery-white-color;
     text-decoration: none;
     padding-top: 60px;
-    
+
     .logo-accent {
       color: $accent-color;
     }
-  
   }
 }
 .container-tube {
@@ -31,7 +28,6 @@
   margin: 0 auto;
   text-align: center;
 }
-
 
 .address-box {
   margin-top: 20px;
@@ -80,14 +76,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
 }
 
 @media screen and (min-width: 1200px) {
   .tube {
     flex-wrap: nowrap;
     align-items: baseline;
-    
+
     .logo-tube {
       text-align: start;
       margin-bottom: 20px;
@@ -101,65 +96,3 @@
     margin-bottom: 0;
   }
 }
-/*.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: $primery-background-color;
-}
-.tube {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-
-  & .logo-tube {
-    display: flex;
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.192;
-    letter-spacing: 0.03em;
-    color: $primery-white-color;
-    text-decoration: none;
-  }
-}
-
-.address-tube {
-  margin-top: 20px;
-
-  & .location {
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.714;
-    letter-spacing: 0.03em;
-    margin-bottom: 9px;
-    font-weight: 400;
-    color: $primery-white-color;
-  }
-}
-
-.address-mail-item {
-  margin-bottom: 9px;
-  color: $primery-white-color;
-}
-
-.address-tube .address-tel-unit,
-.address-tube .address-mail-unit {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.143px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  transition: 250ms $timing-function;
-  text-decoration: none;
-
-  &.address-mail-unit:hover,
-  &.address-mail-unit:focus {
-    color: $accent-color;
-  }
-
-  &.address-tel-unit:hover,
-  &.address-tel-unit:focus {
-    color: $accent-color;
-  }
-}*/
