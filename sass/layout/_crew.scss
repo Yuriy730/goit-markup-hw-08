@@ -19,7 +19,7 @@
 .crew {
   display: flex;
   flex-wrap: wrap;
-
+  min-width: 320px;
   & > .crewlist {
     border: 1px solid #ececec;
     border-radius: 0px 0px 4px 4px;
@@ -43,7 +43,7 @@
   letter-spacing: 0.03em;
   color: $title-text-color;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .crew > .crewlist:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -55,7 +55,7 @@
     flex-wrap: wrap;
   }
   .crewlist {
-    width: 354px;
+    max-width: 354px;
 
     &:nth-child(-n + 2) {
       margin-bottom: 30px;
@@ -71,6 +71,19 @@
   .section-crew {
     padding-top: 94px;
     padding-bottom: 94px;
+
+    &-title {
+      display: flex;
+      justify-content: center;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 1.166;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: $title-text-color;
+      margin-bottom: 50px;
+    }
   }
   .crew {
     display: flex;

@@ -207,6 +207,7 @@ img {
 .header {
   position: relative;
   padding: 16px 0;
+  border-bottom: 1px solid #ececec;
 }
 
 .navigation {
