@@ -24,19 +24,24 @@
   margin: 0 auto;
   align-items: center;
   justify-content: center;
-  width: 210px;
+  width: calc((100% / 2) - 30px);
   height: 90px;
   border: 1px solid $primery-grey-color;
   box-sizing: border-box;
   border-radius: 4px;
   fill: $primery-grey-color;
   transition: 250ms $timing-function;
+  cursor: pointer;
 
   &:hover,
   &:focus {
-    fill: $accent-color;
-    border-color: $accent-color;
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
   }
+}
+.customer-link:hover .customer-icon,
+.customer-link:focus .customer-icon {
+  fill: var(--accent-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -45,13 +50,8 @@
   }
 }
 
-.customer-link:hover > .customer-icon,
-.customer-link:focus > .customer-icon {
-  fill: $accent-color;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .customer-link {
+  .customer-item {
     width: 226px;
   }
 
@@ -61,7 +61,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .customer-link {
+  .customer-item {
     width: 170px;
   }
 }

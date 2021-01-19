@@ -92,9 +92,7 @@
 }
 
 .user-agreement {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   margin-bottom: 30px;
 }
 .subject-agreement {
@@ -104,7 +102,11 @@
 
 .policy-agreement {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
   align-items: center;
+  text-align: center;
+  justify-content: center;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -123,6 +125,15 @@
   .user-policy:checked + &::before {
     background-image: url("../images/hero/icon-check.png");
     border: transparent;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .policy-agreement {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 

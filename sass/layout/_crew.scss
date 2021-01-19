@@ -17,9 +17,6 @@
 }
 
 .crew {
-  display: flex;
-  flex-wrap: wrap;
-  min-width: 320px;
   & > .crewlist {
     border: 1px solid #ececec;
     border-radius: 0px 0px 4px 4px;
