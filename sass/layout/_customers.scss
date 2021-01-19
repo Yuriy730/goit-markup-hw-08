@@ -6,6 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  
 }
 
 .customer-title {
@@ -26,9 +27,7 @@
   justify-content: center;
   width: calc((100% / 2) - 30px);
  
-  & .customer-icon {
-    fill: currentColor;
-  }
+  
  
 }
 
@@ -38,18 +37,19 @@
   justify-content: center;
   height: 90px;
   width: 100%;
+  box-sizing: border-box;
   border: 1px solid $primery-grey-color;
   border-radius: 4px;
-  color: $primery-grey-color;
+  fill: $primery-grey-color;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     fill: $accent-color;
     border-color: $accent-color;
   }
-  & .customer-icon {
+  /*& .customer-icon {
     fill: currentColor;
-  }
+  }*/
   & .customer-icon:hover,
   & .customer-icon:focus {
     fill: $accent-color;
